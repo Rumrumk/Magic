@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <title>Кинотеатр</title>
+</head>
+<body>
+    <header class="header">
+        <img src="IMG/нг.png" alt="Логотип" class="logo">
+        <input type="text" placeholder="Поиск..." class="search-bar">
+        <a href="reg.html" class="registration-link">Регистрация</a>
+        <button class="login-button" onclick="window.location.href='avtorize.html'">Вход</button>
+    </header>
+
+    <div class="nav-bar">
+        <a href="magic.html" class="nav-link">Афиша</a>
+        <a href="" class="nav-link">Расписание</a>
+        <a href="pushkin.html" class="nav-link">Пушкинская карта</a>
+        <a href="#" class="nav-link">Новости</a>
+        <a href="#" class="nav-link">Возврат заказа</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="registration-form">
+        <div class="form-header">Регистрация</div>
+        <div class="form-body">
+            <input type="text" id="name" placeholder="Введите имя" required>
+            <input type="email" id="email" placeholder="Введите электронную почту" required>
+            <input type="password" id="password" placeholder="Введите пароль" required>
+            <input type="password" id="confirm-password" placeholder="Повторите пароль" required>
+            <label>
+                <input type="checkbox" id="agreement" required> Я согласен на обработку персональных данных
+            </label>
+            <button class="register-button" id="registerButton">Зарегистрироваться</button>
+        </div>
+        <div class="footer-text">Уже есть аккаунт? <a href="avtorize.html" style="color: #C6F4F1;">Войти</a></div>
+        <div class="success-message" id="successMessage">Вы успешно зарегистрированы!</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+       
+    <footer class="footer">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="payment-methods">
+                    <h2 class="footer-title">Способы оплаты</h2>
+                    <img src="IMG/image 1.png" alt="Способы оплаты" class="payment-image"> 
+                </div>
+                <div class="social-container">
+                <div class="social-media">
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <img src="IMG/нншш.png" class="social-icons"> 
+                       
+                    <img src="IMG/image 5.png" alt="Социальные сети" class="social-media-image social-media-image-wide">
+                </div>
+                </div>
+                <div class="footer-info">
+                    <div class="contact-info">
+                        <h2 class="footer-text">Чита</h2>
+                        <h3 class="footer-text">ул. Солнечная, 45</h3>
+                        <h2 class="footer-text">Контакты</h2>
+                        <h3 class="footer-text">+7 (4044) 38-66-14</h3>
+                        <h2 class="footer-text">Время работы</h2>
+                        <h3 class="footer-text">Ежедневно с 09:00 до 23:00</h3>
+                    </div>
+                </div>
+            </div>
+            <h1 class="footer-text footer-rights">Все права защищены</h1>
+        </footer>
+
+</body>
+</html>
+
+
+
+
+
+<script>
+    document.getElementById('registerButton').onclick = function() {
+        const email = document.getElementById('email').value;
+        const name = document.getElementById('name').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+        const agreement = document.getElementById('agreement').checked;
+
+       
+        if (!name || !email || !password || !confirmPassword || !agreement) {
+            alert('Пожалуйста, заполните все поля и согласитесь на обработку персональных данных.');
+            return;
+        }
+
+        
+        if (!email.includes('@')) {
+            alert('Пожалуйста, введите корректный адрес электронной почты с символом "@".');
+            return;
+        }
+
+       
+        if (password !== confirmPassword) {
+            alert('Пароли не совпадают. Пожалуйста, попробуйте снова.');
+            return;
+        }
+
+       
+        document.getElementById('successMessage').style.display = 'block';
+    }
+
+    document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+        document.getElementById('confirm-password').value = '';
+        document.getElementById('agreement').checked = false;
+    
+</script>

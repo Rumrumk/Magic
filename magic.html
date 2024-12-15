@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <title>Кинотеатр</title>
+</head>
+<body>
+    <header class="header">
+        <img src="IMG/нг.png" alt="Логотип" class="logo">
+        <input type="text" placeholder="Поиск..." class="search-bar">
+        <a href="reg.html" class="registration-link">Регистрация</a>
+        <button class="login-button" onclick="window.location.href='avtorize.html'">Вход</button>
+    </header>
+
+    <div class="nav-bar">
+        <a href="magic.html" class="nav-link">Афиша</a>
+        <a href="" class="nav-link">Расписание</a>
+        <a href="pushkin.html" class="nav-link">Пушкинская карта</a>
+        <a href="#" class="nav-link">Новости</a>
+        <a href="#" class="nav-link">Возврат заказа</a>
+    </div>
+    <div class="slider">
+        <div class="slider-images">
+            
+            <div class="slide active">
+                <img src="IMG/Паддингтон.png" alt="Слайд 1">
+                <div class="slide-content">
+                    <h1 class="slider-title">Приключения Паддингтона 3</h1>
+                    <h2 class="slider-subtitle">семейная комедия</h2>
+                    <button class="order-button">Заказать билет</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="IMG/картинка 3.png" alt="Слайд 2">
+                <div class="slide-content">
+                    <h1 class="slider-title">Маша и Медведь в кино: Парк чудес</h1>
+                    <h2 class="slider-subtitle">В кино с 5 декабря 2024</h2>
+                    <button class="order-button">Заказать билет</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="IMG/1rfhnbyrf.png" alt="Слайд 3">
+                <div class="slide-content">
+                    <h1 class="slider-title">Последний ронин</h1>
+                    <h2 class="slider-subtitle">В кино с 26 декабря 2024/фантастический экшен, приключения</h2>
+                    <button class="order-button">Заказать билет</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="nav-button left">&lt;</button>
+            <button class="nav-button right">&gt;</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="afisha-section">
+        <div class="afisha-header">
+            <h1 class="afisha-title">Афиша</h1>
+            <div class="left-rectangle"></div>
+            <div class="right-rectangle"></div>
+        </div>
+    
+        <div class="cards-container">
+            
+            <div class="card">
+                <img src="IMG/21815.jpg" alt="Card 1" class="card-image">
+                <div class="age-restriction">6+</div>
+                <div class="card-text">Семейная комедия</div>
+                <div class="button-container">
+                    <button class="card-button">10:30\250р</button>
+                    <button class="card-button">15:00\500р</button>
+                    <button class="card-button">20:05\600р</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="IMG/21295.jpg" alt="Card 2" class="card-image">
+                <div class="age-restriction">16+</div>
+                <div class="card-text">Комедия</div>
+                <div class="button-container">
+                    <button class="card-button">10:30\250р</button>
+                    <button class="card-button">15:00\500р</button>
+                    <button class="card-button">20:05\600р</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="IMG/10048817.jpg" alt="Card 3" class="card-image">
+                <div class="age-restriction">16+</div>
+                <div class="card-text">Триллер/Фантастика</div>
+                <div class="button-container">
+                    <button class="card-button">10:30\250р</button>
+                    <button class="card-button">15:00\500р</button>
+                    <button class="card-button">20:05\600р</button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="IMG/20538.jpg" alt="Card 4" class="card-image">
+                <div class="age-restriction">16+</div>
+                <div class="card-text">Комедия</div>
+                <div class="button-container">
+                    <button class="card-button">10:30\250р</button>
+                    <button class="card-button">15:00\500р</button>
+                    <button class="card-button">20:05\600р</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="about-section">
+        <h2 class="about-title">О нас</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>«Magic projector» — это кинотеатр нового поколения, сочетающий в себе широкий выбор фильмов в высочайшем качестве 
+                и уютную атмосферу для настоящих поклонников кино. Мы предлагаем зрителям не только возможность погрузиться в просмотр культовых лент 
+                на огромных экранах, но и создать незабываемый опыт благодаря потрясающему звуку и комфортным условиям.</p>
+            </div>
+            <img src="IMG/kk.png" alt="About Us" class="about-image"> 
+        </div>
+    </div>
+    <div class="coming-soon-section">
+        <h2 class="coming-soon-title">Скоро в кино</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-slide">
+                        <img src="IMG/22195.jpg" alt="Movie 1" class="card-image-slide">
+                        <div class="age-restriction">18+</div>
+                        <div class="card-text">мультфильм </div>
+                        <div class="button-container">
+                            <button class="card-button">Смотреть</button>
+                            <button class="card-button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-divider"></div>
+                <div class="swiper-slide">
+                    <div class="card-slide">
+                        <img src="IMG/22623.jpg" alt="Movie 2" class="card-image-slide">
+                        <div class="age-restriction">16+</div>
+                        <div class="card-text">анимация</div>
+                        <div class="button-container">
+                            <button class="card-button">Смотреть</button>
+                            <button class="card-button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-slide">
+                        <img src="IMG/21598.jpg" alt="Movie 3" class="card-image-slide">
+                        <div class="age-restriction">12+</div>
+                        <div class="card-text">хоррор\фантастика</div>
+                        <div class="button-container">
+                            <button class="card-button">Смотреть</button>
+                            <button class="card-button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-slide">
+                        <img src="IMG/10050406.jpg" alt="Movie 4" class="card-image-slide">
+                        <div class="age-restriction">18+</div>
+                        <div class="card-text">мюзикл\фэнтези</div>
+                        <div class="button-container">
+                            <button class="card-button">Смотреть</button>
+                            <button class="card-button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-slide">
+                        <img src="IMG/10050397.jpg" alt="Movie 5" class="card-image-slide">
+                        <div class="age-restriction">6+</div>
+                        <div class="card-text">мультфильм</div>
+                        <div class="button-container">
+                            <button class="card-button">Смотреть</button>
+                            <button class="card-button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-slide">
+                        <img src="IMG/21480.jpg" alt="Movie 6" class="card-image-slide">
+                        <div class="age-restriction">0+</div>
+                        <div class="card-text">мультфильм</div>
+                        <div class="button-container">
+                            <button class="card-button">Смотреть</button>
+                            <button class="card-button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+           </div>
+         
+          
+       </div>
+       <br>
+       <br>
+       <br>
+       <footer class="footer">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="payment-methods">
+                    <h2 class="footer-title">Способы оплаты</h2>
+                    <img src="IMG/image 1.png" alt="Способы оплаты" class="payment-image"> 
+                </div>
+                <div class="social-container">
+                <div class="social-media">
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <img src="IMG/нншш.png" class="social-icons"> 
+                       
+                    <img src="IMG/image 5.png" alt="Социальные сети" class="social-media-image social-media-image-wide">
+                </div>
+                </div>
+                <div class="footer-info">
+                    <div class="contact-info">
+                        <h2 class="footer-text">Чита</h2>
+                        <h3 class="footer-text">ул. Солнечная, 45</h3>
+                        <h2 class="footer-text">Контакты</h2>
+                        <h3 class="footer-text">+7 (4044) 38-66-14</h3>
+                        <h2 class="footer-text">Время работы</h2>
+                        <h3 class="footer-text">Ежедневно с 09:00 до 23:00</h3>
+                    </div>
+                </div>
+            </div>
+            <h1 class="footer-text footer-rights">Все права защищены</h1>
+        </footer>
+ 
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            dots[i].classList.remove('active');
+        });
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+
+    document.querySelector('.nav-button.left').addEventListener('click', () => {
+        currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+        showSlide(currentSlide);
+    });
+
+    document.querySelector('.nav-button.right').addEventListener('click', () => {
+        currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+        showSlide(currentSlide);
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    
+    setInterval(() => {
+        currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+        showSlide(currentSlide);
+    }, 3000); 
+</script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3, 
+        spaceBetween: 1, 
+        navigation: {
+            nextEl: '.swiper-button-next', 
+            prevEl: '.swiper-button-prev', 
+        },
+        pagination: {
+            el: '.swiper-pagination', 
+            clickable: true, 
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1, // 1 слайд на экранах меньше 640px
+            },
+            768: {
+                slidesPerView: 2, // 2 слайда на экранах меньше 768px
+            },
+            1024: {
+                slidesPerView: 3, // 3 слайда на экранах больше 1024px
+            },
+        },
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const aboutSection = document.querySelector('.about-section');
+        const aboutImage = document.querySelector('.about-image');
+
+        const observerOptions = {
+            root: null, // Используем viewport
+            rootMargin: '0px',
+            threshold: 0.1 // Срабатывает, когда 10% элемента видно
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutSection.classList.add('visible');
+                    aboutImage.classList.add('tilt'); //  класс наклона
+                } else {
+                    aboutSection.classList.remove('visible');
+                    aboutImage.classList.remove('tilt'); // 
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        observer.observe(aboutSection);
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+
+</head>
+<body>
+</head>
+<body>
+    <header class="header">
+        <img src="IMG/нг.png" alt="Логотип" class="logo">
+        <input type="text" placeholder="Поиск..." class="search-bar">
+        <a href="reg.html" class="registration-link">Регистрация</a>
+        <button class="login-button" onclick="window.location.href='avtorize.html'">Вход</button>
+    </header>
+
+    <div class="nav-bar">
+        <a href="magic.html" class="nav-link">Афиша</a>
+        <a href="" class="nav-link">Расписание</a>
+        <a href="pushkin.html" class="nav-link">Пушкинская карта</a>
+        <a href="#" class="nav-link">Новости</a>
+        <a href="#" class="nav-link">Возврат заказа</a>
+    </div>
+    <br>
+    <br>
+    <br>
+<div class="login-form">
+    <div class="form-header">Вход</div>
+    <div class="form-body">
+        <input type="email" id="email" placeholder="Введите электронную почту" required>
+        <input type="password" id="password" placeholder="Введите пароль" required>
+        <button class="login-button1" id="loginButton">Войти</button>
+    </div>
+    <div class="footer-text">Нет аккаунта? <a href="reg.html" style="color: #C6F4F1;">Зарегистрироваться</a></div>
+    <div class="success-message" id="successMessage">Вы успешно вошли!</div>
+</div>
+<br>
+       <br>
+       <br>
+       <footer class="footer">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="payment-methods">
+                    <h2 class="footer-title">Способы оплаты</h2>
+                    <img src="IMG/image 1.png" alt="Способы оплаты" class="payment-image"> 
+                </div>
+                <div class="social-container">
+                <div class="social-media">
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <img src="IMG/нншш.png" class="social-icons"> 
+                       
+                    <img src="IMG/image 5.png" alt="Социальные сети" class="social-media-image social-media-image-wide">
+                </div>
+                </div>
+                <div class="footer-info">
+                    <div class="contact-info">
+                        <h2 class="footer-text">Чита</h2>
+                        <h3 class="footer-text">ул. Солнечная, 45</h3>
+                        <h2 class="footer-text">Контакты</h2>
+                        <h3 class="footer-text">+7 (4044) 38-66-14</h3>
+                        <h2 class="footer-text">Время работы</h2>
+                        <h3 class="footer-text">Ежедневно с 09:00 до 23:00</h3>
+                    </div>
+                </div>
+            </div>
+            <h1 class="footer-text footer-rights">Все права защищены</h1>
+        </footer>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-image: url("https://i.pinimg.com/enabled/564x/f2/21/af/f221af506ce16fef198e2449405f0b6f.jpg ");
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #610C0C;
+            height: 111px;
+            padding: 0 100px;
+        }
+
+        .logo {
+            width: 200px; 
+            height: 80px; 
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background-color: #FFF4F4;
+        }
+
+        .login-button {
+            background-color: #C6F4F1;
+            color: #FF0000;
+            border: none;
+            border-radius: 5px;
+            width: 118px;
+            height: 61px;
+            font-size: 20pt;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #77232383; 
+        }
+
+        .registration-link {
+            color: #E46078;
+            font-size: 20pt;
+            font-weight: bold;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .nav-bar {
+            display: flex;
+            background-color: #FFD9D9;
+            margin: 0 auto; 
+            padding: 0 130px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-link {
+            color: #fc4747; 
+            font-size: 18pt;
+            text-decoration: none;
+            margin: 0 10px; 
+        }
+
+        .nav-link:hover {
+            text-decoration: underline; 
+        }
+
+        .login-form {
+            background-color: #973838; 
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px; 
+            margin: auto; 
+            color: white; 
+        }
+
+        .form-header {
+            font-size: 24px; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-body input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .login-button1 {
+            background-color: #C6F4F1; 
+            color: red; 
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px; 
+        }
+
+        .footer-text {
+            font-size: 12px; 
+            color: white; 
+            text-align: center; 
+            margin-top: 10px;
+        }
+
+        .success-message {
+            display: none; 
+            color: rgb(255, 255, 255); 
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer {
+    background-color: #b04141; 
+    padding: 20px 0; 
+    color: #ffffff;
+    position: relative; 
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 0 100px; 
+}
+
+
+.footer-title {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+}
+
+
+.payment-image,
+.social-media-image {
+    max-width: 100%; 
+    height: auto; 
+    width: 150px; 
+    height: 100px; 
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.social-icons {
+    width: 100px; 
+    height: 29px; 
+    margin-top: 10px; 
+}
+
+.social-media-image-wide {
+    width: 250px; 
+    height: 125px; 
+    margin-top: 10px; 
+}
+.footer-text {
+    margin: 5px 0; 
+}
+
+.footer-rights {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 12pt; 
+}
+    </style>
+
+<script>
+    document.getElementById('loginButton').onclick = function() {
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Проверка на заполненность всех полей
+        if (!email || !password) {
+            alert('Пожалуйста, заполните все поля.');
+            return;
+        }
+
+        // Проверка на наличие символа '@' в электронной почте
+        if (!email.includes('@')) {
+            alert('Пожалуйста, введите корректный адрес электронной почты.');
+            return;
+        }
+
+        // Если все проверки пройдены, показываем сообщение об успешном входе
+        document.getElementById('successMessage').style.display = 'block';
+
+        // Очищаем поля формы
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+    }
+</script>
+
+</body>
+</html>
